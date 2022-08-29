@@ -39,7 +39,7 @@ namespace TouristGuide.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("find-destination")]
-        public async Task<IActionResult> GetDestinations(string name)
+        public async Task<IActionResult> FindDestination(string name)
         {
             //do code here
             throw new NotImplementedException();
