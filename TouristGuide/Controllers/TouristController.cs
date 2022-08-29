@@ -20,7 +20,33 @@ namespace TouristGuide.Controllers
         }
 
         /// <summary>
-        /// Get place full details using this method, on details view
+        /// Get destinations using name and id
+        /// </summary>
+        /// /// <param name="placeId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("get-all-destinations")]
+        public async Task<IActionResult> GetDestinations(int placeId)
+        {
+            //do code here
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Find destination using name 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("find-destination")]
+        public async Task<IActionResult> GetDestinations(string name)
+        {
+            //do code here
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Get place full details using place id
         /// </summary>
         /// <param name="placeId"></param>
         /// <returns></returns>
@@ -70,12 +96,5 @@ namespace TouristGuide.Controllers
             throw new NotImplementedException();
         }
 
-        [HttpGet]
-        [Route("contact-us")]
-        public IActionResult ContactUs()
-        {
-            //do code here
-            throw new NotImplementedException();
-        }
     }
 }
